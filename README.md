@@ -34,7 +34,7 @@ As a kid, I always loved playing in mazes but often struggled to find the exit. 
 1. **Grover's Algorithm**:
    - Imagine being able to explore **multiple paths at once**. Grover's algorithm allows you to do just that by leveraging the principles of quantum computing. It can search through all possible paths simultaneously, making it ideal for finding the goal (`'G'`) in a maze.
 
-2. **A* Algorithm**:
+2. **A-star Algorithm**:
    - Once the goal is found, the next question is: **What's the shortest path to get there?** A* is a classical algorithm that uses a heuristic to efficiently find the shortest path from the start (`'S'`) to the goal (`'G'`).
 
 By combining these two approaches, this project demonstrates how quantum and classical algorithms can work together to solve real-world problems like maze-solving.
