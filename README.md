@@ -6,19 +6,38 @@ This project combines **Grover's quantum search algorithm** and the **A* pathfin
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Algorithms Overview](#algorithms-overview)
+1. [Motivation](#motivation)
+2. [Introduction](#introduction)
+3. [Algorithms Overview](#algorithms-overview)
    - [Grover's Algorithm](#grovers-algorithm)
    - [A* Algorithm](#a-algorithm)
-3. [Implementation](#implementation)
+4. [Implementation](#implementation)
    - [Maze Representation](#maze-representation)
    - [Grover's Algorithm Implementation](#grovers-algorithm-implementation)
    - [A* Algorithm Implementation](#a-algorithm-implementation)
    - [A* with Visualization](#a-with-visualization)
-4. [How It Works](#how-it-works)
-5. [Example](#example)
-6. [Limitations](#limitations)
-7. [Future Work](#future-work)
+5. [How It Works](#how-it-works)
+6. [Example](#example)
+7. [Comparison](#comparison)
+   - [When to Use Grover's Algorithm](#when-to-use-grovers-algorithm)
+   - [When to Use A* Algorithm](#when-to-use-a-algorithm)
+   - [When to Use the Hybrid Approach](#when-to-use-the-hybrid-approach)
+8. [Limitations](#limitations)
+9. [Future Work](#future-work)
+
+---
+
+## Motivation
+
+As a kid, I always loved playing in mazes but often struggled to find the exit. I would wonder: **How can I find the exit first?** This project is inspired by that childhood curiosity and explores two powerful approaches to solving mazes:
+
+1. **Grover's Algorithm**:
+   - Imagine being able to explore **multiple paths at once**. Grover's algorithm allows you to do just that by leveraging the principles of quantum computing. It can search through all possible paths simultaneously, making it ideal for finding the goal (`'G'`) in a maze.
+
+2. **A* Algorithm**:
+   - Once the goal is found, the next question is: **What's the shortest path to get there?** A* is a classical algorithm that uses a heuristic to efficiently find the shortest path from the start (`'S'`) to the goal (`'G'`).
+
+By combining these two approaches, this project demonstrates how quantum and classical algorithms can work together to solve real-world problems like maze-solving.
 
 ---
 
